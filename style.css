@@ -1,0 +1,35 @@
+ 
+h1{
+  color: rgba(59, 56, 90, 0.664);
+}
+
+.cursive{
+    font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif; /*nice cursive font for title*/
+}
+
+.top5{
+    display: inline-block; /*creates horizontal alignment*/
+    width: 223px; /*sets width of individual divs*/
+}
+
+.list {
+    list-style-type: none; /*removes bullet points in unordered list (ul)*/
+}
+
+.mid{
+    text-align: center; /*mid centers content already within the center*/
+    display: block; /*these three lines center the photo*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#center{
+    width: 906px; /*sets the width of all the content on the page*/
+    margin: 0 auto;
+    font-family: Arial; 
+    color: rgba(5, 5, 5, 0.664);
+}
+
+.titleCenter { 
+    text-align: center;
+}
