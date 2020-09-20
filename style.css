@@ -12,6 +12,29 @@
     width: 270px; /*sets width and height of each grid picture*/
 }
 
+.resizing{
+    height:423px;
+    width:360px;
+    
+
+}
+
+.resizing2{
+    height:423px;
+    width:353px;
+
+}
+
+.left{
+    float: left;
+    margin-right:40px;
+}
+
+.right{
+    float: right;
+    margin-left:40px;
+}
+
 .list {
     list-style-type: none; /*removes bullet points in unordered list (ul)*/
 }
@@ -27,7 +50,7 @@
     width: 1100px; /*sets the width of all the content on the page*/
     margin: 0 auto;
     
-    font-family: Arial; 
+    font-family: Verdana; 
     color: rgba(17, 29, 57, 0.918);
 }
 
