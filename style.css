@@ -13,15 +13,14 @@
 }
 
 .resizing{
-    height:423px;
-    width:360px;
-    
+    max-height:423px;
+    max-width:360px;
 
 }
 
 .resizing2{
-    height:423px;
-    width:353px;
+    max-height:423px;
+    max-width:353px;
 
 }
 
