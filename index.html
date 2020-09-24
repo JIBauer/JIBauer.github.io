@@ -8,18 +8,44 @@
 </head>
 
 <body>
-  <div class = "header">
+  <div class = "header" id="Home">
     <img class = "background" src="./Images/header3.jpg">
     <div class="centered headercolour"><h1 class = "mid"> Hello, I'm </h1><h1 class="cursive mid">Julia Bauer</h1></div>
   </div>
     
-  </div>
+
+<script>
+  function goTo(id) {
+    let destination = document.querySelector(id);
+    let yCoord = destination.offsetTop - 130;
+    window.scrollTo({
+      top: yCoord,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+
   <div id="center">
     <!--<a href="./index.html" target="_blank"><img src="https://www.Prickly_Pear_Closeup.jpg" alt="Brown Bears"/></a>-->
     
     <div id="introduction">
+      <div class="sticky">
+        
+        <div class="link, pointer, stickyformat" onclick="goTo('#Home')">Home</div>
+        <div class="link, pointer, stickyformat" onclick="goTo('#AboutMe')">About Me</div>
+        <div class="link, pointer, stickyformat" onclick="goTo('#Worklife')">Worklife</div>
+        <div class="link, pointer, stickyformat" onclick="goTo('#Projects')">Projects</div>
+        <div class="link, pointer, stickyformat" onclick="goTo('#Top5')">My Top 5's</div>
+        <div class="link, pointer, stickyformat" onclick="goTo('#Travel')">Travel</div>
+      
+      </div>
+      <div style="clear:both;"></div>
+
+
+
       <br /><br /><br />
-      <div>
+      <div id ="AboutMe">
         <p>
           <img class = "resizing left" src="./Images/ProfilePicture2.jpg"/>
           <br /><br />
@@ -33,9 +59,9 @@
       </div>
       <br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-      <div>
+      <div id = "Worklife">
         <p>
-          <img class = "resizing2 right" src="./Images/work3.jpg"/>
+          <img class = "resizing2 right" src="./Images/work1.jpg"/>
           <br />
           <h2>Worklife</h2>
           <p>
@@ -49,57 +75,112 @@
             The summer of 2018 I worked for Venture Academy at McMaster University as an Engineering & Science Instructor to engage elementary schools in a STEM outreach program.  
             <br /><br />
             I am currently searching for full-time post-graduation job opportunities.
-          <br /><br /><br /><br /><br /><br /><br /><br />
+          <br /><br /><br /><br /><br /><br />
         </p>
       </div>
+      
 
-      <h2>Here are some of my <em>"Top 5's"</em></h2>
-    <div id="container">
-      <div class="top5">
-        <h3 class="titleCenter">Top 5 Books</h3>
-        <ul>
-          <li>The Martian</li>
-          <li>The Chrysalids</li>
-          <li>The Running Man</li>
-          <li>Roadside Picnic</li>
-          <li>Station Eleven</li>
-        </ul>
+      <div id = "Projects">
+        <p>
+          <h2>Projects</h2>
+          <p>
+            <i>The projects I have worked on throughout my university career vary from electrical to nuclear to mechanical domains.</i>   
+          </p>
+          
+          <img class = "resizing3 right" src="./Images/school/plasma.jpg"/>
+          <br />
+          <h3>Measurements of Vacuum Pressures and the Creation of Plasma</h3>
+          <p><br />
+            During this lab I monitored vacuum pressures when using various pumps. 
+            The final pressure range was less than 10^-10 Pa. After reaching extremely-high vacuum pressures and applying an external voltage to the fuser coil, 
+            the remaining gas molecules were ionized, and that ionization creates that glowing violet hue, known as plasma.  
+          </p>
+          <br /><br /><br />
+
+          <img class = "resizing3 left" src="./Images/school/reactor.jpg"/>
+          <br />
+          <h3>McMaster Nuclear Reactor Core</h3>
+          <p><br />
+            During this experiment I investigated the varying neutron cross-sections of different materials and the impact of material thickness on penetrability of neutrons. 
+            This utilized a beam of thermal neutrons directed from the reactor.
+            This experiment also identified a buildup factor in select materials, an important parameter in the sheilding of radioactive materials and sources.
+            <br /><i>Cameras aren't permitted in the reactor so this image is taken from the MNR website.</i>
+          </p>
+          <br /><br /><br /><br /><br />
+
+          <img class = "resizing3 right" src="./Images/school/ballandbeam2.jpg"/>
+          <h3> PID Control - Ball and Beam System</h3>
+          <p><br />
+            This is a proportional-integral-derivative control system that was a design project for one of my electronics courses. 
+            It operates by identifying the location of the cylinder using an ultrasonic range finder, then relaying that information to an MSP microcontroller which processes the data and instructs a servomotor to a new position to stabilize the cylinder. 
+
+          </p>
+          <br /><br /><br /><br />
+          
+          <img class = "resizing3 left" src="./Images/school/rangefinder.jpg"/>
+          <h3>Ultrasonic Rangefinder</h3>
+          <p><br />
+            This design project challenge was to create an ultrasonic range finder using two transducers, one to send out an ultrasonic pulse and the other to receive it. 
+            The received signal was amplified, filtered, digitized, intverted and rectified to create a clean and viable signal. 
+            The project was able to successfully measure the distance of an unknown object between 10 and 99cm with an uncertainty of +- 1cm.  
+          </p>
+          <br /><br /><br /><br /><br /><br /><br />
+          
+      </div>
+
+      <div id = "Top5">
+
+          <h2>Here are some of my <em>"Top 5's"</em></h2>
+        <div id="container">
+          <div class="top5">
+            <h3 class="titleCenter">Top 5 Books</h3>
+            <ul>
+              <li>The Martian</li>
+              <li>The Chrysalids</li>
+              <li>The Running Man</li>
+              <li>Roadside Picnic</li>
+              <li>Station Eleven</li>
+            </ul>
+          </div>
+          
+          <div class="top5">
+            <h3 class="titleCenter">Top 5 Movies</h3>
+            <ul>
+              <li>GATTACA</li>
+              <li>World War Z</li>
+              <li>Guardians of the Galaxy</li>
+              <li>The Dark Knight</li>
+              <li>How to Train your Dragon</li>
+            </ul>
+          </div>
+          
+          <div class="top5">
+            <h3 class="titleCenter">Top 5 TV Shows</h3>
+            <ul>
+              <li>Futurama</li>
+              <li>The Handmaid's Tail</li>
+              <li>The 100</li>
+              <li>Grey's Anatomy</li>
+              <li>The Rain</li>
+            </ul>
+          </div>
+          
+          <div class="top5">
+            <h3 class="titleCenter">Top 5 Bands/Artists</h3>
+            <ul>
+              <li>Hozier</li>
+              <li>Weezer</li>
+              <li>Down with Webster</li>
+              <li>Jack Johnson</li>
+              <li>Matt Maeson</li>
+            </ul>
+          </div>
+        </div>
       </div>
       
-      <div class="top5">
-        <h3 class="titleCenter">Top 5 Movies</h3>
-        <ul>
-          <li>GATTACA</li>
-          <li>World War Z</li>
-          <li>Guardians of the Galaxy</li>
-          <li>The Dark Knight</li>
-          <li>How to Train your Dragon</li>
-        </ul>
-      </div>
-      
-      <div class="top5">
-        <h3 class="titleCenter">Top 5 TV Shows</h3>
-        <ul>
-          <li>Futurama</li>
-          <li>The Handmaid's Tail</li>
-          <li>The 100</li>
-          <li>Grey's Anatomy</li>
-          <li>The Rain</li>
-        </ul>
-      </div>
-      
-      <div class="top5">
-        <h3 class="titleCenter">Top 5 Bands/Artists</h3>
-        <ul>
-          <li>Hozier</li>
-          <li>Weezer</li>
-          <li>Down with Webster</li>
-          <li>Jack Johnson</li>
-          <li>Matt Maeson</li>
-        </ul>
-      </div>
       <br />
       <br />
+
       
     <div id="videos">
       <h2>Here is a little compilation of my summer </h2>
@@ -107,9 +188,9 @@
       <h3 class="mid">Summer 2020</h3>
       <video class = "mid" src="./Videos/Summer2020.mp4" height="495" width="750" controls>Video not supported</video>
     </div>
-    <br /><br />
+    <br /><br /><br /><br /><br /><br />
 
-    <div id="travel">
+    <div id="Travel">
       <h2>Here are some of the trips I've been lucky enough to go on </h2>
       <br />
 
